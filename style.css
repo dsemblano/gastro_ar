@@ -597,8 +597,8 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	
 	.rapidas-home {
 		/*background-color: #C2A280 !important;*/
-		background-color: #8CC63F !important;
-		padding: 5px !important;
+		background-color: #8CC63F;
+		padding: 5px;
 	}
 
 	.content-rapidas-wrapper-home {
@@ -652,8 +652,8 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	}
 	
 	.rapidas-home article {
-		background-color: #FCFCFC !important;
-		width: auto !important;
+		/*background-color: #FCFCFC !important;
+		width: auto !important;*/
 	}
 	
 	.rapidas-home article a span {	
@@ -723,18 +723,17 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	.date-rapidas {
 		font-size: smaller;
 		height: 55px;
-		margin: 5px 10px 0;
-		padding: 0 0 5px;
-		width: 100%;
+		margin: 5px 0 0 5px;
 	}
 	
 	.date-rapidas span {
 		border-bottom: 2px solid #DFDFDF;
 		color: #84766C;
-		float: right;
+		float: left;
 		height: 100%;
-		padding: 0 0 2px 10px;
-		width: 195px;
+		margin: 0 0 0 10px;
+		padding: 5px 10px 5px 0;
+		width: 65%;
 	}
 	
 	.date-rapidas span:hover {
@@ -748,7 +747,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	.date-rapidas span h6{
 		font-size: small;
 		color: #84766C;
-		padding-right: 10px;
+		margin-top: 5px;
 	}
 	
 	.date-rapidas :hover{
@@ -756,14 +755,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	}
 	
 	/* Jquery UI Widgets */
-	.ui-tabs .ui-tabs-nav li.ui-state-active a {
-		color: #8CC63F !important;
-		/*color: #C2A280 !important;*/
-	}
 	
-	#fancybox-title-over {
-		font-size: 15px;
-	}
 
 	/* Categorias Páginas */
 	
