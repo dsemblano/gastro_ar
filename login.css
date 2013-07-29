@@ -1,0 +1,10 @@
+#login h1 a {
+	background: url("http://gastroonline.ne10.uol.com.br/wp-content/themes/reverie/images/gastro_logo_transp.png") no-repeat scroll center 15px transparent !important;
+    box-shadow: 0 10px 10px 5px rgba(200, 200, 200, 0.7);
+    height: 120px !important;
+	width: 328px;
+    padding: 0;
+	border: 1px solid #E5E5E5;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 	
+	}
