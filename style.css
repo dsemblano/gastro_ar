@@ -945,6 +945,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	    height: 20px !important;
 		width: 20px !important;
 	}
+	.photospace_res .thumbs_wrap { float: none !important; }
 	
 	.photospace_res .psr_paging {
 		display: inline;
