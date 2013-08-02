@@ -187,8 +187,8 @@ add_action('admin_init', 'presstrends');
 	if(is_home()) {
 		wp_enqueue_script('flexslider', get_bloginfo('stylesheet_directory').'/js/jquery.flexslider-min.js', array('jquery'));
 		wp_enqueue_script('flexslider-init', get_bloginfo('stylesheet_directory').'/js/flexslider-init.js', array('jquery', 'flexslider'));
-		wp_enqueue_script('jquery-ui', get_bloginfo('stylesheet_directory').'/js/jquery-ui-1.10.3.custom.min.js', array('jquery'));
-		wp_enqueue_script('jquery-ui-init', get_bloginfo('stylesheet_directory').'/js/jquery-ui-init.js', array('jquery', 'jquery-ui'));
+		wp_enqueue_script( 'jquery-ui-tabs');
+		wp_enqueue_script('jquery-ui-init', get_bloginfo('stylesheet_directory').'/js/jquery-ui-init.js', array('jquery-ui-tabs'));
 		}
 	}
 	add_action('wp_enqueue_scripts', 'my_add_scripts');
