@@ -182,6 +182,22 @@ add_action('admin_init', 'presstrends');
 
 /************************************ CUSTOM CODE GASTROONLINE ************************************/
 
+// Carregar o contact form 7 só na página contato
+
+add_action( 'wp_print_scripts', 'deregister_cf7_javascript', 'contato' );
+function deregister_cf7_javascript() {
+    if ( !is_page('contato') ) {
+        wp_deregister_script( 'contact-form-7' );
+    }
+}
+
+add_action( 'wp_print_styles', 'deregister_cf7_styles', 'contato' );
+function deregister_cf7_styles() {
+    if ( !is_page('contato') ) {
+        wp_deregister_style( 'contact-form-7' );
+    }
+}
+
 // FlexSlider
 	function my_add_scripts() {
 	if(is_home()) {
