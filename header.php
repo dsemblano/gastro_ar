@@ -86,11 +86,6 @@
 					<!--<img alt="GastroOnline" height='92' width='214' src="<?php //echo get_stylesheet_directory_uri();?>/images/gastro_logo_transp.png">-->
 					<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="GastroOnline logo" />					
 				</a>
-				
-				<a href="http://fig2013.gastroonline.com.br" target="_blank">
-					<img id="fig2013" alt="GastroOnline Fig2013" src="<?php echo get_stylesheet_directory_uri();?>/images/banner_site.jpg">
-				</a>
-</a>
 			</div>
 		</div>
 		<!--<nav id="separa-header"></nav>		-->
