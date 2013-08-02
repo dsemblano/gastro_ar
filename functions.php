@@ -191,6 +191,7 @@ add_action('admin_init', 'presstrends');
 		wp_enqueue_script('jquery-ui-init', get_bloginfo('stylesheet_directory').'/js/jquery-ui-init.js', array('jquery-ui-tabs'));
 		}
 	}
+	wp_enqueue_script( 'jquery-ui-slider');
 	add_action('wp_enqueue_scripts', 'my_add_scripts');
 	
 
@@ -249,5 +250,20 @@ $defaults = array(
 	'admin-preview-callback' => '',
 );
 add_theme_support( 'custom-header', $defaults );
+
+/* Tirar link de foto */
+
+add_filter( 'the_content', 'attachment_image_link_remove_filter' );
+
+function attachment_image_link_remove_filter( $content ) {
+	$content =
+	preg_replace(
+	array('{<a(.*?)(wp-att|wp-content/uploads)[^>]*><img}',
+	'{ wp-image-[0-9]*" /></a>}'),
+	array('<img','" />'),
+	$content
+	);
+	return $content;
+ }
 
 ?>

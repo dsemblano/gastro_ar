@@ -940,65 +940,61 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 		width: 50%;
 	}	
 	
-	/* Galeria Interna - SM-Gallery */
-	
-	#galleryContent1 {
-		margin: 15px 0 20px -30px !important;
+	/* Galeria Interna - Photospace Responsive */
+	.photospace_res .thumnail_row a.pageLink {
+	    height: 20px !important;
+		width: 20px !important;
 	}
 	
-	.ad-gallery {
-	    background-color: transparent !important;
-		height: 520px;
-		margin: 0 0 0 30px !important;
-		width: 610px !important;
-	}
-
-	.ad-gallery .ad-image-wrapper {
-		margin: 15px 0 0 !important;
-		max-height: 440px !important;
-		overflow: hidden !important;
-		width: 610px !important;
+	.photospace_res .psr_paging {
+		display: inline;
+		overflow: hidden;
+		text-align: left !important;
 	}
 	
-	.ad-gallery .ad-image-wrapper .ad-image {
-		height: auto !important;
-		left: 0 !important;
-		margin: 0 !important;
-		overflow: visible !important;
-		position: relative !important;
-	}
-	
-	.ad-gallery .ad-image-wrapper .ad-image img {
-		max-height: 425px !important;
-		width: auto;		
-	}
-	
-	.ad-gallery .ad-controls {
-		bottom: 580px;
-		position: relative;
-		display: none;
-	}
-	
-	.ad-gallery .ad-nav {
-		height: 65px;
-		margin-left: 15px !important;
-		padding-left: 10px !important;
-		width: 560px !important;
-	}
-	
-	.ad-gallery .ad-thumbs li {
-		padding-right: 10px !important;
-	}
-	
-	.ad-gallery .ad-thumbs li a.ad-active img {
+	.photospace_res li.selected a img{
 		border: 3px solid #FA8072 !important;
 	}
-		
-	.ad-gallery .ad-image-wrapper .ad-image .ad-image-description {
-	    bottom: -15px !important;
+	
+	.photospace_res li a img {
+		border: 3px solid #CCCCCC !important;
 	}
 	
-	.ad-gallery .ad-image-wrapper .ad-image .ad-image-description .ad-description-title { color: #515151; }
+	.photospace_res ul.thumbs { text-align: left !important; }
+	
+	.photospace_res .thumnail_row a.prev {
+		float: left !important;
+		margin-top: 15px;
+	}
+	
+	.photospace_res .thumnail_row a.next {
+		float: right !important;
+		margin-top: 15px;
+	}
+	
+	.photospace_res .image-desc, .photospace_res .caption { padding: 0 !important; }
+	
+	.photospace_res .caption .image-caption, .photospace_res .image-desc {
+		background-color: #F7F7F7;
+		font-size: 1.5rem;
+		line-height: 1.5 !important;
+		padding: 5px 10px !important;
+	}
+	
+	.photospace_res .slideshow img {
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+	
+	.photospace_res .slideshow a.advance-link {
+		text-align: left !important;
+	}
+	
+	.photospace_res .caption {
+	    color: #636363 !important;
+		text-align: left !important;
+		text-shadow: 0 2px 3px #CCCCCC;
+	}
 	
 	/* Materias */
 
@@ -1020,8 +1016,9 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	}
 
 	.entry-content figure.figure img {
-		max-width: 610px;
+		max-width: 100%;
 		max-height: 550px;
+		width: 100%;
 		
 	}
 
