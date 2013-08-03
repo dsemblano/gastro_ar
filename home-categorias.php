@@ -153,13 +153,7 @@
 				</div>
 				<h3>VÍDEO</h3>
 				<p><? the_title();?></p>
-				<?php $short_title = the_excerpt("", "", false);
-				$short_title_2 = substr($short_title, 0, 50);
-				echo $short_title_2;
-				if ($short_title_2 != $short_title) {
-					echo "...";
-				}
-				?>
+				<?php the_excerpt(); ?>
 				</a>
 			</article>
 			<? endwhile; endif;?>
