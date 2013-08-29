@@ -954,11 +954,11 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	
 	.photospace_res li.selected a img{
 		border: 3px solid #FA8072 !important;
-		max-height: 550px;
 	}
 	
 	.photospace_res li a img {
 		border: 3px solid #CCCCCC !important;
+		max-height: 550px !important;
 	}
 	
 	.photospace_res ul.thumbs { text-align: left !important; }
