@@ -7,10 +7,10 @@
 		while(have_posts()) : the_post();
 	?>
 		<li>
-			<a href="<?the_permalink(); ?>">
-				<? the_post_thumbnail( 'slider2', array( 'title' => ''.get_the_title().'' )); // Imagem do Slider ?>
+			<a href="<?php the_permalink(); ?>">
+				<?php the_post_thumbnail( 'slider2', array( 'title' => ''.get_the_title().'' )); // Imagem do Slider ?>
 			</a>
-			<h5 class="gallery-title"><a href="<?the_permalink(); ?>" title="<? the_title(); ?>"><? echo the_title(); ?></a></h5>
+			<h5 class="gallery-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo the_title(); ?></a></h5>
 			<p class="flex-caption">						
 				<a href="<?php the_permalink(); ?>">
 					<?php $excerpt = get_the_excerpt();								  
