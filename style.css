@@ -716,6 +716,8 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 		width: 60%;*/
 	}
 	
+	.ui-tabs-panel { width: 100%; }
+	
 	.sidebar-box img{
 	
 	}

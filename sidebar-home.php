@@ -7,15 +7,16 @@
 	<div class="fb-like-box" data-href="http://www.facebook.com/gastroonline" data-width="295" data-height="110" data-show-faces="false" data-stream="false" data-header="false"></div>
 	
 	<div id="tabs" class="rapidas-home">		
-		<ul>
-			<!--<li><a href="#tabs-2">S&atilde;o Jo&atilde;o 2013</a></li>-->
-			<li><a href="#tabs-1">R&aacutepidas</a></li>
-			<li><a href="#tabs-2">&Uacute;ltimas Not&iacute;cias</a></li>
+		<ul>			
+			<!--<li><a href="#tabs-1">R&aacutepidas</a></li>-->
+			<li><a href="#tabs-1">5&ordm; Prazeres da Mesa</a></li>
+			<!--<li><a href="#tabs-2">&Uacute;ltimas Not&iacute;cias</a></li>-->
+			<li><a href="#tabs-2">&Uacute;ltimas</a></li>
 		</ul>
 		
 		<div id="tabs-1">
 			<?php
-				$args = array( 'post_type' => 'post', 'category_name' => 'rapidas', 'showposts' => 10 );
+				$args = array( 'post_type' => 'post', 'category_name' => '5o-prazeres-da-mesa', 'showposts' => 10 );
 				$the_query = new WP_Query($args);
 				while ( $the_query->have_posts() ) : $the_query->the_post();
 			?>			
@@ -56,15 +57,17 @@
 						} ?>
 					</div>
 					<span>
-						<?php the_time('d/m/y - G:i'); ?>
-						<h6>						
+						<time datetime="<?php the_time('d/m/y - G:i'); ?>">
+							<?php the_time('d/m/y - G:i'); ?>
+						</time>
+						<h6>
 							<?php
 							$short_title = the_title("", "", false);
 							$short_title_2 = substr($short_title, 0, 45);
 							echo $short_title_2;
 							if ($short_title_2 != $short_title) { echo "...";
 							}
-							?>						
+							?>
 						</h6>
 					</span>
 				</a>
