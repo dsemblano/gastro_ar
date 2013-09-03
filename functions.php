@@ -281,5 +281,10 @@ function attachment_image_link_remove_filter( $content ) {
 	);
 	return $content;
  }
+ 
+function remove_versao() {
+return '';
+}
+add_filter('the_generator', 'remove_versao');
 
 ?>
