@@ -57,15 +57,9 @@
 		//print_r ($termsIDchild);
 		foreach ($termsIDchild as $child) {
 			$term = get_term_by('id', $child, $taxonomyName);
-			$opts = xydac_cloud('category', '', '');
-			$oxc = $opts[$term -> slug]['foto-categoria'];
-			if (empty($oxc)){
-				echo '<div class="especiais-page"><a href="' . get_term_link($term->name, $taxonomyName) . '"><div class="especiais-img-default"></div></a><h2><a href="' . get_term_link($term->name, $taxonomyName) . '">' . $term->name . '</a></h2></div>';
-			}
-			else {
-			//print_r ($term);
-				echo '<div class="especiais-page"><a href="' . get_term_link($term->name, $taxonomyName) . '"><img class="attachment-medium especiais-img" height="135" width="200" src=' . $oxc . ' /></a><h2><a href="' . get_term_link($term->name, $taxonomyName) . '">' . $term->name . '</a></h2></div>';
-			}
+			s8_taxonomy_image($child, 'medium');
+			print_r ($opts); die();
+			echo '<div class="especiais-page"><a href="' . get_term_link($term->name, $taxonomyName) . '">' . $opts . '</a><h2><a href="' . get_term_link($term->name, $taxonomyName) . '">' . $term->name . '</a></h2></div>';
 		}
 	?>
 	<?php endif; ?>
