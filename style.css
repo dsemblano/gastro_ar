@@ -984,11 +984,6 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 		padding: 5px 10px !important;
 	}
 	
-	.photospace_res .slideshow img {
-		max-width: 100% !important;
-		max-height: 500px !important;
-	}
-	
 	.photospace_res .slideshow a.advance-link {
 		text-align: left !important;
 	}
@@ -1014,15 +1009,10 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	}
 	
 	/* Fotos enviadas dentro da matéria */ 
-	.entry-content .mceTemp img {
-	
-	}
 
-	.entry-content figure.figure img {
-		max-width: 100%;
-		max-height: 550px;
-		width: 100%;
-		
+	.entry-content figure.figure img, .photospace_res .slideshow img {
+		height: auto;
+		max-width: 100%;		
 	}
 
 	#facebook-materias {
