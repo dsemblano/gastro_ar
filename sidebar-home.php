@@ -8,15 +8,14 @@
 	
 	<div id="tabs" class="rapidas-home">		
 		<ul>			
-			<!--<li><a href="#tabs-1">R&aacutepidas</a></li>-->
-			<li><a href="#tabs-1">5&ordm; Prazeres da Mesa</a></li>
-			<!--<li><a href="#tabs-2">&Uacute;ltimas Not&iacute;cias</a></li>-->
-			<li><a href="#tabs-2">&Uacute;ltimas</a></li>
+			<li><a href="#tabs-1">R&aacutepidas</a></li>
+			<li><a href="#tabs-2">&Uacute;ltimas Not&iacute;cias</a></li>
+			
 		</ul>
 		
 		<div id="tabs-1">
 			<?php
-				$args = array( 'post_type' => 'post', 'category_name' => '5o-prazeres-da-mesa', 'showposts' => 10 );
+				$args = array( 'post_type' => 'post', 'category_name' => 'rapidas', 'showposts' => 10 );
 				$the_query = new WP_Query($args);
 				while ( $the_query->have_posts() ) : $the_query->the_post();
 			?>			
