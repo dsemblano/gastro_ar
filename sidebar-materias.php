@@ -39,7 +39,7 @@
 					<p class="teaser-materia">
 					<? if ( empty( $post->post_excerpt ) ) {
 						$rapidas_resumo = get_the_excerpt();
-						echo ucfirst(strtolower(string_limit_words($rapidas_resumo, 10)));
+						echo ucfirst(string_limit_words($rapidas_resumo, 10));
 						}else{
 						echo get_the_excerpt();
 						}
