@@ -719,7 +719,8 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	.ui-tabs-panel { width: 100%; }
 	
 	.sidebar-box img{
-	
+		height: auto;
+		width: auto;	
 	}
 
 	.date-rapidas {
