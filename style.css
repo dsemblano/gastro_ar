@@ -102,8 +102,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 		margin: 20px 130px 0 0;
 	}
 	
-	#wrapper {
-	}
+	#wrapper {  margin-top: -15px;	}
 	
 	.row .eight {
 		width: 67%;
@@ -171,17 +170,16 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	}
 	
 	#header-home {
-		background: rgb(255,255,255); /* Old browsers */
-		background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
-		background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+		/*background: rgb(255,255,255); /* Old browsers */
+		/*background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+		/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+		/*background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+		/*background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+		/*background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+		/*background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+		/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+		background: url("images/background.jpg") no-repeat scroll 50% 50% / 100% auto rgba(0, 0, 0, 0);
 		height: 115px;
-		-webkit-box-shadow: 0 2px 5px -5px #999999;
-		box-shadow: 0 2px 5px -5px #999999;
 	}
 	
 	#separa-header {
@@ -195,14 +193,10 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	.reverie-header {		
 		border-bottom: medium none !important;
 		margin: 0 auto !important;
-		/*padding: 10px 0 0 !important;*/
 		width: 960px;
 	}
 	
-	#logo-home {
-		/*float: left;*/
-		/*margin: 0 15px 0 0;*/
-	}
+	#logo-home { position: absolute;	}
 	
 	#logo-home a.banner {
 	    margin-left: 14px;

@@ -48,6 +48,7 @@
 	<!-- Startup Image iPhone (320x460) -->
 	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/images/devices/gastro-load.png" media="screen and (max-device-width: 320px)" />
 	
+	<!-- NE10 Barra -->
 	<script type="text/javascript" src="http://barra.ne10.uol.com.br/parceiro/gastro-online-111.js"></script>
 	
 	<?php wp_head(); ?>

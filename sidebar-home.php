@@ -7,10 +7,9 @@
 	<div class="fb-like-box" data-href="http://www.facebook.com/gastroonline" data-width="295" data-height="110" data-show-faces="false" data-stream="false" data-header="false"></div>
 	
 	<div id="tabs" class="rapidas-home">		
-		<ul>			
-			<li><a href="#tabs-1">R&aacutepidas</a></li>
-			<li><a href="#tabs-2">&Uacute;ltimas Not&iacute;cias</a></li>
-			
+		<ul>
+			<li><a href="#tabs-2">Noronha</a></li>
+			<li><a href="#tabs-1">R&aacutepidas</a></li>			
 		</ul>
 		
 		<div id="tabs-1">
@@ -43,11 +42,11 @@
 		</div>
 		
 		<div id="tabs-2">
-			<?php 
-				$args = array( 'post_type' => 'post', 'showposts' => 10 );
+			<?php
+				$args = array( 'post_type' => 'post', 'category_name' => 'fernando-de-noronha', 'showposts' => 10 );
 				$the_query = new WP_Query($args);
 				while ( $the_query->have_posts() ) : $the_query->the_post();
-			?>
+			?>			
 			<div class="date-rapidas">
 				<a href="<?php the_permalink(); ?>">
 					<div class="img-sidebar">
@@ -56,23 +55,21 @@
 						} ?>
 					</div>
 					<span>
-						<time datetime="<?php the_time('d/m/y - G:i'); ?>">
-							<?php the_time('d/m/y - G:i'); ?>
-						</time>
-						<h6>
+						<h6>						
 							<?php
 							$short_title = the_title("", "", false);
 							$short_title_2 = substr($short_title, 0, 45);
 							echo $short_title_2;
 							if ($short_title_2 != $short_title) { echo "...";
 							}
-							?>
+							?>						
 						</h6>
 					</span>
 				</a>
 			</div>
-			<?php endwhile; wp_reset_postdata(); ?>
+			<?php endwhile; wp_reset_postdata(); ?>		
 		</div>
+		
 	</div>
 	
 	<div class="sidebar-box">
