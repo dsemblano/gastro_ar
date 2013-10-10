@@ -1016,9 +1016,10 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	.entry-content img, .entry-summary img, .comment-content img, .widget img, .wp-caption {
 		max-width: 100%;
 		height: auto;
+		margin: 0 0 0 2px;
 	}
 	
-	.alignright { float: right; }
+	.alignright { float: right; margin: 0 0 0 5px; }
 	
 	.wp-caption .wp-caption-text, .entry-caption, .gallery-caption {
 		background-color: #EEEEEE;
