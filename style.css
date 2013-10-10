@@ -282,10 +282,20 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 		transition: all 500ms ease;
 	}
 	
+	.flexslider .slides img {
+	  height: 100% !important;
+	  width: 100% !important;
+	}
+	
+	.slides	.caption {
+		margin-top: 10px;
+		text-indent: 10px;
+	}
+	
 	.gallery-title {	
 		font-family: 'VAGRoundedBold';
 		letter-spacing: 1.5px;
-		padding: 10px 0 2px 10px;
+		margin: 0;
 	}
 	
 	.gallery-title a {	
@@ -294,7 +304,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	}
 	
 	.flex-caption {
-	    padding: 0 0 5px 10px;
+		margin: 3px 0 0;
 	}
 	
 	.flex-caption a {
