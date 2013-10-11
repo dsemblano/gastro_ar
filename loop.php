@@ -46,10 +46,12 @@
 		$taxonomyName = 'category';	
 		$id_pagina = get_queried_object()->term_id;
 		$child_terms_especiais = array_reverse(get_term_children ($id_pagina, $taxonomyName));
+		//print_r($child_terms_especiais);
 		
 		foreach ($child_terms_especiais as $child) {
 			//Termo individual baseado na interação do array
 			$term = get_term_by('id', $child, $taxonomyName);
+			print_r($term);
 			//print_r ($term);
 			$image_html = s8_get_taxonomy_image(get_term( $term->term_id, $taxonomyName ), 'category-pages');
 			if (empty($image_html)) {

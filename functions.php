@@ -212,8 +212,6 @@ add_action('login_head', 'login_css');
 $defaults = array(
 	'default-image'          => '',
 	'random-default'         => false,
-	'width'                  => 0,
-	'height'                 => 0,
 	'flex-height'            => false,
 	'flex-width'             => false,
 	'default-text-color'     => '',
@@ -244,5 +242,12 @@ function remove_versao() {
 return '';
 }
 add_filter('the_generator', 'remove_versao');
+
+/* Permitir enviar imagens em SVG */
+function cc_mime_types( $mimes ){
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter( 'upload_mimes', 'cc_mime_types' );
 
 ?>
