@@ -866,7 +866,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 		border-radius: 5px;
 	}
 	
-	.category-page header h2, #cat_especiais .cat-item, .especiais-page h2 {
+	.category-page header h2, #cat_especiais .cat-item, #content-internas article h2 {
 		font-family: ProximaNova-Light;
 		font-size: 1.95em;
 		font-weight: lighter;
@@ -874,9 +874,13 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 		text-rendering: optimizelegibility;
 	}
 	
-	.category-page header h2 a, .especiais-page h2 a{
+	.category-page header h2 a, #content-internas article h2 a, #content-internas article h2 {
 		color: #808080;
 		font-weight: lighter;
+	}
+	
+	#content-internas article h2 {
+		width: 63%;
 	}
 	
 	.category-page .entry-content {
@@ -907,7 +911,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 		text-decoration: underline;
 	}
 	
-	.especiais-page {
+	#content-internas article {
 		height: 135px;
 		margin-bottom: 10px;
 		margin-top: 15px;
@@ -915,7 +919,7 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	
 	/* Quando não houver imagem padrão */
 	
-	.img-busca, .especiais-img, .especiais-img-default{
+	.img-busca, .especiais-img, .especiais-img-default, #content-internas article img {
 		background-color: #E0E0E0;
 		border-radius: 5px 5px 5px 5px;
 		-webkit-border-radius: 5px 5px 5px 5px;
@@ -928,9 +932,9 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 		margin-right: 20px;
 	}
 	
-	.especiais-page img {
-		float: left;
-		margin-right: 20px;
+	.chamada_texto {
+		float: right;
+		width: 63%;
 	}
 	
 	.img-categorias {
@@ -940,11 +944,6 @@ License URI:        http://www.opensource.org/licenses/mit-license.phpdsdssddsds
 	.img-categorias img {
 
 	}
-	
-	.especiais-page h2 {
-		float: left;
-		width: 50%;
-	}	
 	
 	/* Galeria Interna - Photospace Responsive */
 	.photospace_res .thumnail_row a.pageLink {

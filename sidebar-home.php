@@ -8,7 +8,7 @@
 	
 	<div id="tabs" class="rapidas-home">		
 		<ul>
-			<li><a href="#tabs-2">Noronha</a></li>
+			<li><a href="#tabs-2">Dia das Crian&ccedil;as 2013</a></li>
 			<li><a href="#tabs-1">R&aacutepidas</a></li>			
 		</ul>
 		
@@ -43,7 +43,7 @@
 		
 		<div id="tabs-2">
 			<?php
-				$args = array( 'post_type' => 'post', 'category_name' => 'fernando-de-noronha', 'showposts' => 10 );
+				$args = array( 'post_type' => 'post', 'category_name' => 'dia-das-criancas-2013', 'showposts' => 10 );
 				$the_query = new WP_Query($args);
 				while ( $the_query->have_posts() ) : $the_query->the_post();
 			?>			
