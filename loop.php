@@ -49,14 +49,15 @@
 		
 		foreach ($child_terms_especiais as $child) {
 			//Termo individual baseado na interação do array
-			$term = get_term_by('id', $child, $taxonomyName);	
+			$term = get_term_by('id', $child, $taxonomyName);
+			//print_r ($term);
 			$image_html = s8_get_taxonomy_image(get_term( $term->term_id, $taxonomyName ), 'category-pages');
 			if (empty($image_html)) {
-				echo '<article><a href="' . get_term_link($term->name, $taxonomyName) . '"><div class="especiais-img-default"></div><h2 class="chamada_texto">' . $term->name . '</h2></a></article>';
+				echo '<article><a href="' . get_term_link($term->slug, $taxonomyName) . '"><div class="especiais-img-default"></div><h2 class="chamada_texto">' . $term->name . '</h2></a></article>';
 			}
 
 			else {
-				echo '<article><a href="' . get_term_link($term->name, $taxonomyName) . '">' . $image_html . '<h2 class="chamada_texto">' . $term->name . '</h2></a></article>';
+				echo '<article><a href="' . get_term_link($term->slug, $taxonomyName) . '">' . $image_html . '<h2 class="chamada_texto">' . $term->name . '</h2></a></article>';
 			}
 		}
 	?>
